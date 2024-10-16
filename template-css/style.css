@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.navbar{
+    padding: 15px;
+    
+}
+
+.navbar .logo{
+    width: 150px;
+    float: left;
+    margin: 50px;
+    margin-top: 10px;
+
+}
+/* .navbar ul{
+    background-color: blue;
+} */
+ul li{
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+  
+  
+
+}
+ul li a{
+    text-decoration: none; 
+    margin-left: 50px;
+    color:#0099ad;
+ 
+
+}
+ul{
+    margin-top: 50px;
+    margin-left: 50%;
+    border: 1px solid;
+    background: color #0099ad;
+}
+ul li a:hover{
+    color: green;
+    cursor: pointer;
+
+}
+.text{
+    position: absolute;
+    z-index: -1;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+ .text h2{
+    font-size: 50px;
+}  
+.text p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+span{
+    color: #0099ad;
+}
+.text h2 p{
+    margin-top: 40px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color:#0099ad ;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+    
+button:hover{
+    background-color: #105761;
+    
+
+}
+.drink-image{
+    /* position: absolute;
+    z-index: -1;  */
+    width: 350px;
+    margin-right: 50%;
+    margin-left: 50%;
+    margin-top: -30px;
+
+}  
