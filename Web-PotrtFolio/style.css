@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
+}
+
+:root{
+    --white-clr: #fff;
+    --black-clr: #000;
+    --gray-clr: #ececec;
+    --yellow-clr:#f2bf31;
+}
+
+.main-container{
+background-color: var(--black-clr);
+min-height: 100vh;
+position: relative;
+}
+.container{
+    min-height: 100vh;
+    width:85% ;
+    margin: auto;
+}
+.logo{
+   color: var(--yellow-clr);
+   font-weight: bold;
+   font-size: 1.5rem;
+   letter-spacing:.1rem;
+   text-transform: uppercase;
+}
+
+.navbar{
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar-list{
+    display: flex;
+    gap: 3rem;
+}
+.navbarlinks{
+    color: var(--white-clr);
+    font-size: .9rem;
+    letter-spacing: .08rem;
+    position: relative;
+    text-transform: uppercase;
+}
+.active{
+    color: var(--yellow-clr);
+}
+.navbarlinks:hover{
+    color: var(--yellow-clr);
+    transition:.5s ease-in-out;
+}
+.navbarlinks::before,
+.active::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: .1rem;
+    background-color: var(--yellow-clr);
+    bottom: -10px;
+    left: 0;
+}
+.navbarlinks:hover::before,
+.active::before{
+  width: 100%;
+  transition: .5s ease-in-out;
+}
+.fa-bars{
+    font-size: 1.7rem;
+    color: var(--white-clr);
+}
+.humburger{
+    display: none;
+    z-index: 4;
+}
+img{
+    width: 24rem;
+    height: auto;
+}
+.image-container{
+ width: 24rem;
+ position: relative;
+}
+.image-container::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--yellow-clr);
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(60deg);
+    
+}
+.hero-container{
+    isolation: isolate;
+    max-height: calc(100vh -14vh);
+    display: flex;
+    align-items: center;
+    gap : 13rem;
+    line-height:4rem;
+
+}
+.image-container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+    transparent,
+    var(--black-clr)
+
+    );
+    
+    height: 6rem;
+    width: 100%;
+
+}
+
+h4{
+    color: var(--yellow-clr);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: .1.5rem;
+}
+
+h1{
+    color: var(--white-clr);
+     font-size: 3rem;
+}
+span{
+    color: var(--yellow-clr);
+
+}
+p{
+    max-width: 500px;
+    color: var(--gray-clr);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-block: 1rem;
+    
+}
+.btn-container{
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+button{
+    background-color: var(--yellow-clr);
+    font-size: .9rem;
+    border: .1rem solid var(--white-clr);
+    padding: .7rem 1.8rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.btn-border{
+    background-color: transparent;
+    color: var(--white-clr);
+}
+.btn-border:hover{
+    background-color: var(--yellow-clr);
+    color: var(--black-clr);
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--black-clr);
+    z-index: 3;
+}
+
+/* media Queries */
+@media screen and (
+    max-width: 680px
+){
+    .navbar-list{
+        flex-direction: column;
+        background-color: var(--yellow-clr);
+        position: absolute;
+        top: 15%;
+        left: -100%;
+        transform: translateX(-50%);
+        z-index: 4;
+        width: 20rem;
+        padding-block: 3rem;
+        align-items: center;
+        transition: .5s ease-in-out;
+    }
+    .navbar-list-active{
+        left: 50%;
+    }
+    .active,
+    .navbarlinks:hover{
+        color: var(--black-clr);
+    }
+    .navbarlinks::before{
+      background-color: var(--black-clr);
+    }
+    .navbarlinks{
+        color: var(--black-clr);
+    }
+    .humburger{
+        display: block;
+    }
+    .hero-container{
+      flex-direction: column;
+      margin-top: 2rem;
+      gap : 2rem
+    }
+    h1{
+        font-size: 3.3rem;
+    }
+    .image-container{
+        width: 18rem;  
+    }
+    .image-container::before{
+        width: 18rem;
+        height: 24rem;
+    }
+    .overlay-active{
+        opacity: .6;
+        visibility: visible;
+        transform: .5s ease-in-out;
+    }
+}
+
+
+
+
+
+

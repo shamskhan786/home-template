@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(217,205,27);
+        background-color: linear-gradient(90deg, rgba(217,205,27,1) 0%, rgba(0,212,255,1) 0%, rgba(241,255,5,0.9948354341736695) 0%, rgba(195,144,236,1) 49%, rgba(248,254,0,1) 100%, rgba(93,11,134,1) 100%);;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-div {
+        width: 80%;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 70px;
+        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+        border: 1px solid;
+        box-shadow: 2px 2px 5px ;
+      }
+      .text {
+        font-size: 70px;
+      }
+      .navbar {
+        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+        display: flex;
+        padding-top: 10px;
+        font-size: large;
+      }
+      .logo ul {
+        padding-top: 10px;
+      }
+      .navbar .logo{
+        
+        margin-top: 15px;
+      
+      }
+      .logo{
+        font-size: 30px;
+        padding-left: 30px;
+        color: yellowgreen;
+      }
+
+      .menu {
+        margin-left: 45%;
+        display: flex;
+        gap: 50px;
+        border-radius: 5px;
+      }
+      ul li{
+        list-style: none;
+      }
+      ul li a {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-weight:bold;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px ;
+        cursor: pointer;
+      }
+      a:hover{
+        background-color: rgb(151, 4, 4);
+      }
+      .text{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 50px;
+        word-spacing: 5px;
+        line-height:100px;
+        font-weight: bold;
+        color: white;
+      }
+      .b-div{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 50px;
+      }
+      button{
+        width: 150px;
+        height: 45px;
+        font-size: x-large;
+        font-weight: bolder;
+        border-radius: 30px;
+        
+      }
+      .b-div .b1{
+        background-color: rgb(251, 164, 3);
+        
+      }
+      .b-div .b1:hover{
+        background-color: rgb(198, 130, 4);
+      }
+
+      .b-div .b2{
+        background-color: yellowgreen;
+      }
+      .b-div .b2:hover{
+        background-color: rgb(109, 163, 1);
+      }
+      .b-div .b3{
+        background-color: rgb(247, 100, 124);
+      }
+      .b-div .b3:hover{
+        background-color:  rgb(222, 24, 57);
+      }
+      
+      .text2{
+        color: white;
+        margin-left: 25%;
+        font-size: 30px;
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      ul{
+        display: flex;
+        gap: 100px;
+        margin-left: 50px;
+      }
+     .text2 ul li{
+        list-style: none;
+        margin-top: -130px;
+      }
+    ul .type{
+        margin-left: -30px ;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+        
+      <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+         
+        </ul>
+      </nav>
+      <div class="text">Design Project &  <br>Handoff (Project Name)</div>
+       <div class="b-div">
+      <button class="b1">Library</button>
+      <button class="b2">Complete</button>
+      <button class="b3">Aqua</button>
+      </div>
+      <div class="text2">
+        <ul>
+            <li class="type">Type</li>
+            <li>Status</li>
+            <li>Designer</li>
+        </ul>
+      </div>
+  </body>
+</html>
